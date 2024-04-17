@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Music app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="music">Music</string>
+    <string name="setting">Setting</string>
+    <string name="favourite_artists">Favourite artists</string>
+    <string name="notification">Notification</string>
+    <string name="popular_playlists">Popular playlists</string>
+    <string name="top_albums">Top Albums</string>
+    <string name="top_popular_songs">Top Popular Songs</string>
+    <string name="see_all">See all</string>
+</resources>

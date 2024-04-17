@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <!-- Text Styles -->
+    <style name="App_Text_Body">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textDefault</item>
+    </style>
+
+    <style name="App_Text_Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="App_Text_Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="App_Text_Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="App_Text_Logo">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins_bolditalic</item>
+    </style>
+    <!-- Button Styles -->
+    <style name="App_Button_Primary">
+        <item name="android:background">#FF4081</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="App_Button_Secondary">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#FF4081</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="App_Button_Outline">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">#FF4081</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:backgroundTint">#FF4081</item>
+        <item name="android:foregroundTint">#FF4081</item>
+    </style>
+
+    <!-- RecyclerView Styles -->
+    <style name="App_RecyclerView_Horizontal">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp" />
+</resources>
