@@ -12,4 +12,6 @@
     <string name="top_albums">Top Albums</string>
     <string name="top_popular_songs">Top Popular Songs</string>
     <string name="see_all">See all</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="now_playing">NOW PLAYING</string>
 </resources>

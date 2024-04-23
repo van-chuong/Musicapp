@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundDefault"
-    tools:context=".ui.activities.track.TrackPlayerActivity">
+    tools:context=".presentation.track.TrackPlayerActivity">
 
     <View
         android:id="@+id/view"
@@ -21,7 +21,7 @@
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/grey100"
+        android:background="@color/grey50"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/grey100"
+        android:background="@color/grey50"
         app:layout_constraintBottom_toTopOf="@+id/layoutTrackPlayer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/view"
@@ -67,8 +67,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTrackTitle" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/appCompatImageButton3"
+    <ImageButton
+        android:id="@+id/btnBack"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_margin="20dp"
@@ -81,12 +81,12 @@
         style="@style/App_Text_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/now_playing"
         android:textAlignment="center"
-        android:text="NOW PLAYING"
-        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appCompatImageButton3" />
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutTrackPlayer"
@@ -94,13 +94,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/track_player_bg"
         android:elevation="10dp"
-        android:padding="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/txtDuration"
             style="@style/App_Text_Caption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,12 +126,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:progress="30"
             app:layout_constraintBottom_toTopOf="@+id/btnPlay"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
+        <ImageButton
             android:id="@+id/btnPlay"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -143,7 +144,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
+        <ImageButton
             android:id="@+id/btnPrevious"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -155,7 +156,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btnPlay"
             app:layout_constraintTop_toTopOf="@+id/btnPlay" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
+        <ImageButton
             android:id="@+id/btnNext"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -167,8 +168,8 @@
             app:layout_constraintStart_toEndOf="@+id/btnPlay"
             app:layout_constraintTop_toTopOf="@+id/btnPlay" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/appCompatImageButton2"
+        <ImageButton
+            android:id="@+id/btnShuffle"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:background="@null"
@@ -178,7 +179,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btnPlay" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
+        <ImageButton
+            android:id="@+id/btnRepeat"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:background="@null"
@@ -202,7 +204,7 @@
             style="@style/App_Text_Subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lyrics"
+            android:text="@string/lyrics"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

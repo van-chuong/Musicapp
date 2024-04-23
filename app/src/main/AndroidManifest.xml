@@ -14,11 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicApp"
         tools:targetApi="31">
+        <!-- TrackPlayerService -->
+        <service
+            android:name=".services.TrackPlayerService"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity
-            android:name=".ui.activities.track.TrackPlayerActivity"
+            android:name=".presentation.track.TrackPlayerActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.main.MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
